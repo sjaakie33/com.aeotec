@@ -4808,7 +4808,7 @@
         },
         {
           "id": "81",
-          "type": "checkbox",
+          "type": "dropdown",
           "label": {
             "en": "LED Behaviour On Alarms",
             "nl": "LED Gedrag Bij Alarmen"
@@ -4816,12 +4816,35 @@
           "hint": {
             "en": "Enable the LED on activating the motion and tamper alarms.\n\nDevice firmware v1.8 and up",
             "nl": "Activeer de LED bij het activeren van de beweging en sabotage alarmen.\n\nDevice firmware v1.8 en hoger"
-          },
+          },  
           "zwave": {
             "index": 81,
             "size": 1
           },
-          "value": true
+          "value": "0",
+          "values": [
+            {
+              "id": "0",
+              "label": {
+                "en": "Enable LED blinking",
+                "nl": "LED knipping aan"
+              }
+            },
+            {
+              "id": "1",
+              "label": {
+                "en": " Disable LED blinking only when the PIR is triggered.",
+                "nl": "LED uit behalve by beweging"
+              }
+            },
+            {
+              "id": "2",
+              "label": {
+                "en": "Completely disable LED for motion, wakeup, and sensor report. from version 1.11",
+                "nl": "LED Volledig uit, van versie 1.11"
+              }
+            }
+          ]
         },
         {
           "id": "111",
